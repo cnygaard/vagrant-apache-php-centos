@@ -1,0 +1,7 @@
+#- yum: name=php
+#- yum: name=php-mysql
+#- yum: name=php-mysqlnd
+- yum: name=http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+- yum: name=php-fpm enablerepo=remi-php55
+- service: name=php-fpm state=started enabled=true
+- yum: name=php-pecl-mysqlnd-qc enablerepo=remi-php55

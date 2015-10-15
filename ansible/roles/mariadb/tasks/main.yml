@@ -1,0 +1,3 @@
+- yum: name=mariadb
+- yum: name=mariadb-server
+- service: name=mariadb state=started enabled=true

@@ -1,0 +1,6 @@
+- yum: name=httpd
+- service: name=httpd enabled=true state=started
+
+#- yum: name=http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+#- yum: name=mod_fastcgi
+- yum: name=mod_fcgid
